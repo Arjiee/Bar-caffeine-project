@@ -1,0 +1,233 @@
+@font-face {
+    font-family: lexend;
+    src: url(Lexend/Lexend-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: lexend-light;
+    src: url(Lexend/static/Lexend-Light.ttf);
+  }
+  @font-face {
+    font-family: lexend-bold;
+    src: url(Lexend/static/Lexend-Bold.ttf);
+  }
+  @font-face {
+    font-family: lexend-medium;
+    src: url(Lexend/static/Lexend-Medium.ttf);
+  } 
+  @font-face {
+    font-family: galanda;
+    src: url(Galada/Galada-Regular.ttf);
+  } 
+  @font-face {
+    font-family: lexend-extralight;
+    src: url(Lexend/static/Lexend-ExtraLight.ttf);
+  }
+/*header css start*/
+
+.menulinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 90px;
+    background-color: #31221B;
+    font-family: 'lexend-light';
+    font-size: 23px;
+    position: relative;
+    height: 80px;
+    transition: .2s;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+.add {
+    height: 25px;
+    background-color: #555343;
+}
+.social-div {
+    height: 30px;
+    background-color: #555343;
+    padding: 0px 90px;
+}
+.logo-holder {
+    position: relative;
+}
+img.logo {
+    width: 180px;
+    position: absolute;
+    top: -65px;
+    transition: 0.2s;
+}
+.links-holder {
+    display: flex;
+    width: 717px;
+    align-items: center;
+    justify-content: flex-end;
+}
+a.headerlinks.active {
+    font-family: 'lexend-light';
+    color: #FFC79A;
+}
+a.headerlinks {
+    position: relative;
+    transition: .5ms;
+    transition-delay: .3ms;
+    margin-left: 80px;
+    padding: 10px 0px;
+}
+a.headerlinks:hover {
+    top:-2px;
+}
+.social-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'lexend-light';
+    font-size: 12px;
+}
+.hoverfade:hover{
+    opacity: 0.75;
+}
+.sociallinks {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-div2{
+    margin-left: 20px;
+}
+.heading {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+/*header css end*/
+/*footer css start*/
+.footercont {
+    padding: 60px 130px 50px 130px;
+    background-color: #18110E;
+}
+.footmenuh {
+    display: flex;
+    justify-content: space-between;
+}
+a.a-footlink {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+img.footericon {
+    width: 20px;
+}
+h5.footersoc {
+    font-size: 12px;
+    margin: 0px;
+}
+.footlinks {
+    margin: 0px 20px;
+}
+
+img.footerlogo {
+    width: 150px;
+}
+.footsocial {
+    width: 250px;
+}
+.copyr>p {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    font-family: 'lexend-extralight';
+    font-size: 10px;
+}
+.copyr {
+    background-color: #422F27;
+    padding: 10px;
+}
+
+/*footer css end*/
+/*animation css start*/
+        /*class trigger start*/
+        .animate-right{
+            animation: animateright .4s;
+        }
+        /*class trigger end*/
+        /*keyframes start*/
+        @keyframes animateright{
+            from{right:-300px;opacity:0} 
+            to{right:0;opacity:1}
+        }
+        /*keyframes end*/
+
+/*animation css end*/
+
+body{
+    margin:unset;
+}
+h1{
+    margin-bottom: 10px;
+    font-size: 80px;
+    font-family: 'galanda';
+    color: white;
+    line-height: 1.2;
+
+}
+h6.subheading {
+    font-family: 'lexend-light';
+    font-size: 18px;
+    margin: 0px;
+    color: white;
+}
+h5 {
+    font-family: 'lexend-light';
+    font-weight: unset;
+    font-size: 17px;
+    margin: 0px 0px 28px 0px;
+}
+h2{
+    font-family: 'lexend-bold';
+    font-size: 40px;
+    color:#30221C;
+    text-align: center;
+}
+h3{
+    color: #30221C;
+    font-family: 'lexend';
+    font-size: 25px;
+}
+p{
+    color: #30221C;
+    font-family: 'lexend';
+    font-size: 12px;
+}
+button{
+    background-color: #422F27;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    width: 105px;
+    border-style: none;
+    font-family: 'lexend-light';
+}
+.subheading2{
+    font-size: 60px;
+    text-align: center;
+}
+span{
+    color: white;
+    font-family: lexend;
+}
+h4 {
+    color: white;
+    font-family: 'lexend-light';
+    font-weight: 400;
+    margin: 10px 0px;
+}
+.hoverbg:hover{
+    background-color: #66473a;
+}

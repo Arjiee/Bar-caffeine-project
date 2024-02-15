@@ -1,0 +1,639 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffees</title>
+    <link rel="stylesheet" href="globalstyle.css">
+
+    <style>
+        .abouthero {
+            background-image: url(siteresouce/herobg3.png);
+            background-size: cover;
+            background-position-y: 63px;
+            padding: 180px 130px 90px 130px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menucont{
+            padding: 70px 130px;
+        }
+        .menuflex {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .categhold {
+            background-color: #ACA180;
+            border-radius: 20px 0px 0px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: fit-content;
+            padding: 0px 0px 30px 30px;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        button.category{
+            border-radius: 25px 0px 0px 25px;
+            border-style: none;
+            border-width: 0px;
+            width: 200px;
+            background-color: #ACA180;
+        }
+        /*button.category:hover{
+            background-color: rgb(128, 88, 71);
+        }*/
+        button.category>h4{
+            font-weight: 400;
+            font-family: 'lexend-light';
+            margin: 5px;
+        }
+        
+        .menuframe {
+            width: 100%;
+            min-width: 600px;
+            min-height: 648px;
+            display: flex;
+            flex-direction: row;
+            transition: transform 0.5s ease-in-out;
+            
+        }
+        .menuslide{
+            position: relative;
+            width: 100%;
+            
+            min-width: 100%;
+            
+        }
+        .menuh2{
+            color: white;
+            font-size: 35px;
+            font-family: 'lexend-extralight';
+        }
+        .menuflex2{
+            background-color: #30221C;
+            border-radius: 0px 20px 20px 20px;
+            width: 70%;
+            min-width: 600px;
+            overflow: hidden;
+            background-image: url("siteresouce/barcaffeine-logo-large.png");
+            background-position-x: 60px;
+            background-position-y: 95px;
+            background-repeat: no-repeat;
+        }
+        .bselflex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px 20px;
+            justify-content: center;
+        }
+        .bselcard>h3{
+            color: white;
+            font-family: lexend;
+            font-size: 18px;
+            margin: 0px 0px 10px 0px;
+            max-width: 90px;
+        }
+        .bselcard>span{
+            font-size: 13px;
+            font-family: 'lexend';
+
+        }
+        .menuimg{
+            max-width: 200px;
+        }
+        button.order {
+            margin: 20px 0px 0px 0px;
+            font-size: 11px;
+            color: #30221C;
+            background-color: #ebd89f;
+            width: 75px;
+            font-family: 'lexend';
+        }
+        table{
+            color: white;
+            font-family: 'lexend-extralight';
+            font-size: 18px;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .menutablecont {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 30px;
+        }
+        td.tablecell {
+            padding: 5px 0px;
+            max-width: 119px;
+        }
+        th{
+            padding: 5px 0px;
+            text-align: left;
+            font-family: 'lexend-light';
+        }
+            
+    </style>
+    
+</head>
+<body>
+<!--heading start-->
+<div class="heading">
+    <div class="social-div">
+        <div class="social-div2">
+            <a href="https://instagram.com" target="_blank">
+                <div class="sociallinks hoverfade">
+                    <div><img src="siteresouce/instaheadericon.png" alt="" style="margin-right: 5px;"></div>
+                    <div><text>insta_</text></div>
+                </div>
+            </a>
+        </div>
+        <div class="social-div2">
+            <a href="https://facebook.com" target="_blank">
+                <div class="sociallinks hoverfade">
+                    <div><img src="siteresouce/fbheadericon.png" alt="" style="margin-right: 5px;"></div>
+                    <div><text>Facebook</text></div>
+                </div>
+            </a>
+        </div>
+        <div class="social-div2">
+            <a href="mailto:samplegmail@gmail.com">
+                <div class="sociallinks hoverfade">
+                    <div><img src="siteresouce/mailheadericon.png" alt="" style="margin-right: 5px;"></div>
+                    <div><text>samplegmai@gmail.com</text></div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <div class="menulinks" id="menulinks">
+        <div class="logo-holder">
+            <a href="home.html"><img src="siteresouce/Logo.png" alt="" class="logo" id="logo"></a>
+            
+
+        </div>
+        <div class="links-holder">
+            <a href="home.html" class="headerlinks hoverfade">Home</a>
+            <a href="menu.html" class="headerlinks hoverfade  active">Coffees</a>
+            <a href="aboutus.html" class="headerlinks hoverfade">About Us</a>
+            <a href="contactus.html" class="headerlinks hoverfade">Contact Us</a>
+        </div>
+
+    </div>
+    <div class="add">
+
+
+    </div>
+
+</div>
+<!--heading end-->
+<div class="maindiv">
+    <!--hero start-->
+    <div class="abouthero">
+        <h1 class="subheading2">Our Menu</h1>
+    </div>
+    <!--hero end-->
+
+<!--menu start-->
+<div class="menucont">
+    <div class="menuflex">
+        <div class="categhold" id="categories">
+            <button class="category" onclick="showSlide(0)" style="background-color: #30221C;">
+                <h4>BEST SELLERS</h4>
+            </button>
+            <button class="category" onclick="showSlide(1)">
+                <h4>ICED COFFEE</h4>
+            </button>
+            <button class="category" onclick="showSlide(2)">
+                <h4>ICED BLENDED</h4>
+            </button>
+            <button class="category" onclick="showSlide(3)">
+                <h4>NON COFEE</h4>
+            </button>
+            <button class="category" onclick="showSlide(4)">
+                <h4>FRUIT TEA</h4>
+            </button>
+            <button class="category" onclick="showSlide(5)">
+                <h4>LEMONADE</h4>
+            </button>
+            <button class="category" onclick="showSlide(6)">
+                <h4>OTHER</h4>
+            </button>
+        </div>
+        <div class="menuflex2">
+            <div class="menuframe" id="menuitem">
+                <div class="menuslide" id="menuslide">
+                    <div id="bselslide">
+                        <div>
+                            <h2 class="menuh2">BEST SELLERS</h2>
+                            <div class="bselflex">
+                                <div class="bselflex bselflex2">
+                                    <img src="siteresouce/purelemon.png" alt="" class="menuimg">
+                                    <div class="bselcard">
+                                        <h3>Pure Lemon</h3>
+                                        <span>79 Php</span><br>
+                                        <a href="tel:00000000">
+                                            <button class="order hoverfade">Order</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bselflex bselflex2">
+                                    <img src="siteresouce/caramelmachiato.png" alt="" class="menuimg">
+                                    <div class="bselcard">
+                                        <h3>Caramel Machiato</h3>
+                                        <span>79 Php</span><br>
+                                        <a href="tel:00000000">
+                                            <button class="order hoverfade">Order</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bselflex">
+                                <div class="bselflex bselflex2">
+                                    <img src="siteresouce/strawberrymilk.png" alt="" class="menuimg">
+                                    <div class="bselcard">
+                                        <h3>Strawberry Milk</h3>
+                                        <span>79 Php</span><br>
+                                        <a href="tel:00000000">
+                                            <button class="order hoverfade">Order</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="bselflex bselflex2">
+                                    <img src="siteresouce/mangolemon.png" alt="" class="menuimg">
+                                    <div class="bselcard">
+                                        <h3>Mango Lemon</h3>
+                                        <span>79 Php</span><br>
+                                        <a href="tel:00000000">
+                                            <button class="order hoverfade">Order</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                
+                </div>
+                <div class="menuslide" id="menuslide">
+                    <div id="bselslide">
+                        <div class="menutablecont">
+                            <h2 class="menuh2">ICED COFFEE</h2>
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>22oz</th>
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">CLASSIC COFFEE</td>
+                                    <td class="tablecell">69</td>  
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">VANILLA LATTE</td>
+                                    <td class="tablecell">69</td>  
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">CARAMEL LATTE</td>
+                                    <td class="tablecell">69</td>  
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">HAZELNUT LATTE</td>
+                                    <td class="tablecell">69</td>  
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">MOCHA</td>
+                                    <td class="tablecell">69</td>  
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">BROWN SUGAR AMERICANO</td>
+                                    <td class="tablecell">69</td>  
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">PEPPERMINT MOCHA</td>
+                                    <td class="tablecell">79</td>  
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">CARAMEL MACHIATO</td>
+                                    <td class="tablecell">79</td>  
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">BROWN SUGAR BREVE</td>
+                                    <td class="tablecell">79</td>  
+                                </tr>
+                              </table>
+                        </div>  
+                    </div>
+                
+                </div>
+                <div class="menuslide" id="menuslide">
+                    <div id="bselslide">
+                        <div class="menutablecont">
+                            <h2 class="menuh2">ICED BLENDED</h2>
+                            <table>
+                                <tr>
+                                  <th>COFFEE BASED</th>
+                                  <th>M</th>
+                                  <th>L</th>
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">COFFEE FRAPUCCINO</td>
+                                    <td class="tablecell">69</td> 
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">COFFEE JELLY FRAPUCCINO</td>
+                                    <td class="tablecell">79</td> 
+                                    <td class="tablecell">89</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">MOCHA FRAPUCCINO</td>
+                                    <td class="tablecell">79</td> 
+                                    <td class="tablecell">89</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">JAVA CHIP FRAPUCCINO</td>
+                                    <td class="tablecell">79</td> 
+                                    <td class="tablecell">89</td> 
+                                </tr>
+
+                              </table>
+                              <table>
+                                <tr>
+                                  <th>CREAM BASED</th>
+                                  <th>M</th>
+                                  <th>L</th>
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">VANILA FRAPUCCINO</td>
+                                    <td class="tablecell">69</td> 
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">CHOCOLATE FRAPUCCINO</td>
+                                    <td class="tablecell">69</td> 
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">VANILLA CHIP CREAM</td>
+                                    <td class="tablecell">79</td> 
+                                    <td class="tablecell">89</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">CHOCOLATE CHIP CREAM</td>
+                                    <td class="tablecell">79</td> 
+                                    <td class="tablecell">89</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">STRAWBERRY AND CREAM</td>
+                                    <td class="tablecell">79</td> 
+                                    <td class="tablecell">89</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">MATCHA CREAM</td>
+                                    <td class="tablecell">79</td> 
+                                    <td class="tablecell">89</td> 
+                                </tr>
+
+                              </table>
+                        </div>  
+                    </div>
+                
+                </div>
+                <div class="menuslide" id="menuslide">
+                    <div id="bselslide">
+                        <div class="menutablecont">
+                            <h2 class="menuh2">NON COFFEE</h2>
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>Php</th>
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">STRAWBERRY MILK</td>                                 
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">CHOCOLATE MILK</td>
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">BLUEBERRY MILK</td>
+                                    <td class="tablecell">79</td> 
+                                     
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">MACHA LATTE</td>
+                                    <td class="tablecell">79</td> 
+                                     
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">UBE LATTE</td>
+                                    <td class="tablecell">79</td>     
+                                </tr>
+                              </table>
+                        </div>  
+                    </div>
+                
+                </div>
+                <div class="menuslide" id="menuslide">
+                    <div id="bselslide">
+                        <div class="menutablecont">
+                            <h2 class="menuh2">FRUIT TEA</h2>
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>Php</th>
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">LYCHEE FRUIT TEA</td>                                 
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">BLUEBERRY FRUIT TEA</td>
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">GREEN APPLE FRUIT TEA</td>
+                                    <td class="tablecell">79</td> 
+                                     
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">STRAWBERRY FRUIT TEA</td>
+                                    <td class="tablecell">79</td> 
+                                     
+                                </tr>
+                            
+                              </table>
+                        </div>  
+                    </div>
+                
+                </div>
+                <div class="menuslide" id="menuslide">
+                    <div id="bselslide">
+                        <div class="menutablecont">
+                            <h2 class="menuh2">LEMONADE</h2>
+                            <table>
+                                <tr>
+                                  <th></th>
+                                  <th>Php</th>
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">PURE LEMONADE</td>                                 
+                                    <td class="tablecell">59</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">STRAWBERRY LEMONADE</td>
+                                    <td class="tablecell">59</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">LYCHEE LEMONADE</td>
+                                    <td class="tablecell">59</td> 
+                                     
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">GREEN APPLE LEMONADE</td>
+                                    <td class="tablecell">59</td> 
+                                     
+                                </tr>
+                            
+                              </table>
+                        </div>  
+                    </div>
+                
+                </div>
+                <div class="menuslide" id="menuslide">
+                    <div id="bselslide">
+                        <div class="menutablecont">
+                            <h2 class="menuh2">OTHER</h2>
+                            <table>
+                                <tr>
+                                  <th>SODA BOMB</th>
+                                  <th>Php</th>
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">BLUEBERRY</td>                                 
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">GREEN APPLE</td>
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">MANGO</td>
+                                    <td class="tablecell">79</td> 
+                                     
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">STRAWBERRY</td>
+                                    <td class="tablecell">79</td> 
+                                     
+                                </tr>
+                            
+                              </table>
+                              <table>
+                                <tr>
+                                  <th>MOCKTAIL</th>
+                                  <th>Php</th>
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">VIRGIN MOJITO</td>                                 
+                                    <td class="tablecell">79</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">GINGER ALE</td>
+                                    <td class="tablecell">79</td> 
+                                </tr>                           
+                              </table>
+                              <table>
+                                <tr>
+                                  <th>HOT DRINKS</th>
+                                  <th>Php</th>
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">FRESHLY BREWED COFFEE</td>                                 
+                                    <td class="tablecell">-</td> 
+                                </tr>
+                                <tr>
+                                    <td class="tablecell">HOT CHOCOLATE</td>
+                                    <td class="tablecell">-</td> 
+                                </tr> 
+                                <tr>
+                                    <td class="tablecell">HOT MATCHA</td>
+                                    <td class="tablecell">-</td> 
+                                </tr>                          
+                              </table>
+                        </div>  
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--menu end-->
+        
+<!--footer start-->
+<div class="footercont">
+    <div class="footmenuh">
+        <div class="logoholder">
+            <a href="home.html">
+            <img src="siteresouce/Logo.png" alt="" class="footerlogo">
+            </a>
+        </div>
+        <div class="footlinks">
+            <a href="home.html" class="footerlink hoverfade">
+                <h5>Home</h5>
+            </a>
+            <a href="menu.html" class="footerlink hoverfade">
+                <h5>Cofees</h5>
+            </a>
+            <a href="aboutus.html" class="footerlink hoverfade">
+                <h5>About Us</h5>
+            </a>
+            <a href="contactus.html" class="footerlink hoverfade">
+                <h5>Contact Us</h5>
+            </a>
+            <a href="aboutdemo.html" class="footerlink hoverfade">
+                <h5>About Demo</h5>
+            </a>
+
+        </div>
+        <div class="footsocial">
+            <a href="" class="a-footlink hoverfade">
+                <img src="siteresouce/footinsta.png" alt="" style="margin-right: 10px;" class="footericon">
+                <h5 class="footersoc">insta_</h5>
+            </a>
+            <a href="" class="a-footlink hoverfade">
+                <img src="siteresouce/footfb.png" alt="" style="margin-right: 10px;" class="footericon">
+                <h5 class="footersoc">Bar Caffeine - Shawarma ni Teban Burol Main Dasma</h5>
+            </a>
+            <a href="" class="a-footlink hoverfade">
+                <img src="siteresouce/footmail.png" alt="" style="margin-right: 10px;" class="footericon">
+                <h5 class="footersoc">sampleemail@gmail.com</h5>
+            </a>
+            
+        </div>
+
+    </div>
+    
+</div>
+<div class="copyr">
+    <p>
+        Copyrights @ 2024. All rights reserved.
+    </p>
+
+</div>
+
+
+<!--footer end-->
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>

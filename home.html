@@ -1,0 +1,407 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Caffeine</title>
+    <link rel="stylesheet" href="globalstyle.css">
+    <style>
+        .herosec{
+            background-image: url("siteresouce/herobg3.png");
+            background-size:cover;
+            background-position-y: 120px ;
+            padding: 90px 130px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+            overflow: hidden;
+        }
+        .herosecflex {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: flex-end;
+            justify-content: space-around;
+        }
+        img.heroimg {
+            position: relative;
+            bottom: -245px;
+            left: 100px;
+        }
+        .divider{
+            padding:3px 0px;
+            background-color: #372424;
+            overflow: hidden;
+
+        }
+        .divitext{
+            font-family: 'lexend-extralight';
+            font-size: 11px;
+            width:1280px;
+            height: 19px;
+            margin:0px;
+            color:white;
+            display: flex;
+            align-items: center;
+        }
+        .bsellerpadding{
+            padding:50px 130px;
+
+        }
+        .bsellerdata>p {
+            font-size: 14px;
+            margin: 0px 0px 30px;
+        }
+        .bselleritem {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            margin: 10px 60px;
+            animation: animateright .4s;
+            position: relative;
+        }
+        .bselheading{
+            width: 90px;
+            margin: 0px 0px 5px 0px;
+        }
+        .bsellflexcont {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .followcont {
+            padding: 50px 130px;
+        }
+        .folflex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .textcard {
+            padding: 50px 40px;
+            background-color: #F9B681;
+        }
+        .imagehold {
+            background-image: url(resources/herobg.jpg);
+            background-position-x: -169px;
+            background-size: cover;
+        }
+        h2.followh2 {
+            text-align: left;
+            font-size: 35px;
+            margin: 0px 0px 15px 0px;
+        }
+        .followlink {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+        p.foltext {
+            font-size: 16px;
+            font-family: 'lexend';
+        }
+        .cardflex.card2 {
+            margin-top: 50px;
+        }
+        button.aboutus-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            width: auto;
+            font-size: 17px;
+        }
+        .revcont {
+            padding: 50px 130px 100px 130px;
+            background-color: #E2DCB5;
+        }
+        .revflex {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: 50px 0px 90px 0px;
+        }
+        .flexinner {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            margin: 0px 20px;
+        }
+        p.revname {
+            font-family: 'lexend-bold';
+            font-size: 13px;
+            text-align: right;
+        }
+        .revtexthold {
+            padding: 30px 40px;
+            background-color: white;
+            border-radius: 20px 20px 20px 0px;
+            width: 400px;
+        }
+        .revtexthold2 {
+            position: relative;
+            bottom: -50px;
+            border-radius: 20px 20px 0px 20px;
+        }
+        .revjake {
+            position: relative;
+            bottom: -50px;
+            margin-left: 10px;
+        }
+        .midbutton {
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--heading start-->
+    <div class="heading">
+        <div class="social-div">
+            <div class="social-div2">
+                <a href="https://instagram.com" target="_blank">
+                    <div class="sociallinks hoverfade">
+                        <div><img src="siteresouce/instaheadericon.png" alt="" style="margin-right: 5px;"></div>
+                        <div><text>insta_</text></div>
+                    </div>
+                </a>
+            </div>
+            <div class="social-div2">
+                <a href="https://facebook.com" target="_blank">
+                    <div class="sociallinks hoverfade">
+                        <div><img src="siteresouce/fbheadericon.png" alt="" style="margin-right: 5px;"></div>
+                        <div><text>Facebook</text></div>
+                    </div>
+                </a>
+            </div>
+            <div class="social-div2">
+                <a href="mailto:samplegmail@gmail.com">
+                    <div class="sociallinks hoverfade">
+                        <div><img src="siteresouce/mailheadericon.png" alt="" style="margin-right: 5px;"></div>
+                        <div><text>samplegmai@gmail.com</text></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="menulinks" id="menulinks">
+            <div class="logo-holder">
+                <a href="home.html"><img src="siteresouce/Logo.png" alt="" class="logo" id="logo"></a>
+                
+
+            </div>
+            <div class="links-holder">
+                <a href="home.html" class="headerlinks hoverfade active">Home</a>
+                <a href="menu.html" class="headerlinks hoverfade">Coffees</a>
+                <a href="aboutus.html" class="headerlinks hoverfade">About Us</a>
+                <a href="contactus.html" class="headerlinks hoverfade">Contact Us</a>
+            </div>
+
+        </div>
+        <div class="add">
+
+
+        </div>
+
+    </div>
+<!--heading end-->
+    <div class="maindiv">
+
+<!--hero start-->
+        <div class="herosec" style="height: 500px;">
+            <div class="herosecflex">
+                <div style="width: 442px;">
+                    <h1>Great day for Great coffee</h1>
+                    <h6 class="subheading">For your everyday caffeine needs on the go!</h6>
+                </div>
+                <div>
+                    <img src="siteresouce/herocoffee.png" alt="" class="heroimg">
+                </div>
+            </div>
+        </div>
+<!--hero end-->
+<!--Best sellers start-->
+        <div class="bestsellercont">
+            <div class="divider">
+                <p class="divitext">BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•</p>
+            </div>
+            <div class="bsellerpadding">
+                <h2>
+                    OUR BEST SELLERS
+                </h2>
+                <div>
+                    <div class="bsellflexcont">
+                        <div class="bselleritem">
+                            <div><img src="siteresouce/purelemon.png" alt=""></div>
+                            <div class="bsellerdata">
+                                <h3 class="bselheading">Pure Lemon</P></h3>
+                                <p>79 Php</p>
+                                <a href="tel:0000000000">
+                                    <button class="hoverfade">Order Now</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bselleritem">
+                            <div><img src="siteresouce/caramelmachiato.png" alt=""></div>
+                            <div class="bsellerdata">
+                                <h3 class="bselheading">Caramel Machiato</P></h3>
+                                <p>79 Php</p>
+                                <a href="tel:0000000000">
+                                    <button class="hoverfade">Order Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bsellflexcont">
+                        <div class="bselleritem">
+                            <div><img src="siteresouce/strawberrymilk.png" alt=""></div>
+                            <div class="bsellerdata">
+                                <h3 class="bselheading">Strawberry Milk</P></h3>
+                                <p>79 Php</p>
+                                <a href="tel:0000000000">
+                                    <button class="hoverfade">Order Now</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bselleritem">
+                            <div><img src="siteresouce/mangolemon.png" alt=""></div>
+                            <div class="bsellerdata">
+                                <h3 class="bselheading">Mango Lemon</P></h3>
+                                <p>79 Php</p>
+                                <a href="tel:0000000000">
+                                    <button class="hoverfade">Order Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider">
+                <p class="divitext">BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•BARCAFFEINE•</p>
+            </div>
+        </div>
+<!--Best sellers end-->
+<!--follow us start-->
+        <div class="followcont">
+            <div class="folflex">
+                <div class="imagehold" style="width: 65%;">
+
+                </div>
+                <div class="textcard" style="width: 35%;">
+                    <div class="cardflex">
+                        <h2 class="followh2">FOLLOW US ON FACEBOOK</h2>
+                        <a href="https://www.facebook.com/profile.php?id=100084571244092" target="_blank" class="followlink hoverfade">
+                            <img src="siteresouce/followfb.png" alt="" style="margin-right: 10px;">
+                            <p class="foltext">Bar Caffeine Parkplace Branch Imus</p>
+                        </a>
+                        <a href="https://www.facebook.com/barcaffeineburolmaindasmabranch" target="_blank" class="followlink hoverfade">
+                            <img src="siteresouce/followfb.png" alt="" style="margin-right: 10px;">
+                            <p class="foltext">Bar Caffeine - Shawarma ni Teban Burol Main Dasma</p>
+                        </a>
+                    </div>
+                    <div class="cardflex card2">
+                        <h2 class="followh2">VISIT OUR SHOPS</h2>
+                        <a href="https://maps.app.goo.gl/jkK65BFE4Q4qXvWb7" target="_blank" class="followlink hoverfade">
+                            <img src="siteresouce/mappin.png" alt="" style="margin-right: 10px;">
+                            <p class="foltext">Bar Caffeine Parkplace Branch Imus</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/2jF8GDnaaVdrYzqAA" target="_blank" class="followlink hoverfade">
+                            <img src="siteresouce/mappin.png" alt="" style="margin-right: 10px;">
+                            <p class="foltext">Bar Caffeine - Shawarma ni Teban Burol Main Dasma</p>
+                        </a>
+                        <a href="contactus.html" ><button class="aboutus-button hoverfade">Contact Us</button></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+<!--follow us end-->
+<!--reviews start-->
+        <div class="revcont">
+            <h2>FROM OUR CUSTOMERS</h2>
+            <div>
+                <div class="revflex">
+                    <div class="flexinner">
+                        <img src="siteresouce/tel1.png" alt="" style="width: 50; margin-right: 10px;">
+                        <div class="revtexthold">
+                            <p>Hi po! Kami po yung taga St. Jude kahapon po- will just leave a review po kasi nakikipag sabayan po talaga yung coffee nyo with other coffee shops na mamahalin! Affordable and quality po siya for its pricee- woll definetly visit again soon po!</p>
+                            <p class="revname">- Crystle</p>
+                        </div>                                            
+                    </div>
+                    <div class="flexinner">
+                        <div class="revtexthold revtexthold2">
+                            <p>Ang sarap po ng coffee nyo! nakakaadik ang sarap balikbalikan. Caramel Machiato is my favorite!</p>
+                            <p class="revname">- Jake</p>
+                        </div>
+                        <img src="siteresouce/jake1.png" alt="" class="revjake">
+                    </div> 
+                                       
+                </div>
+                <div class="midbutton">
+                    <a href="aboutus.html" ><button class="aboutus-button hoverfade">About Us</button></a>
+                </div>    
+            </div>
+        </div>
+<!--reviews end-->
+<!--footer start-->
+        <div class="footercont">
+            <div class="footmenuh">
+                <div class="logoholder">
+                    <a href="home.html">
+                    <img src="siteresouce/Logo.png" alt="" class="footerlogo">
+                    </a>
+                </div>
+                <div class="footlinks">
+                    <a href="home.html" class="footerlink hoverfade">
+                        <h5>Home</h5>
+                    </a>
+                    <a href="menu.html" class="footerlink hoverfade">
+                        <h5>Cofees</h5>
+                    </a>
+                    <a href="aboutus.html" class="footerlink hoverfade">
+                        <h5>About Us</h5>
+                    </a>
+                    <a href="contactus.html" class="footerlink hoverfade">
+                        <h5>Contact Us</h5>
+                    </a>
+                    <a href="aboutdemo.html" class="footerlink hoverfade">
+                        <h5>About Demo</h5>
+                    </a>
+
+                </div>
+                <div class="footsocial">
+                    <a href="" class="a-footlink hoverfade">
+                        <img src="siteresouce/footinsta.png" alt="" style="margin-right: 10px;" class="footericon">
+                        <h5 class="footersoc">insta_</h5>
+                    </a>
+                    <a href="" class="a-footlink hoverfade">
+                        <img src="siteresouce/footfb.png" alt="" style="margin-right: 10px;" class="footericon">
+                        <h5 class="footersoc">Bar Caffeine - Shawarma ni Teban Burol Main Dasma</h5>
+                    </a>
+                    <a href="" class="a-footlink hoverfade">
+                        <img src="siteresouce/footmail.png" alt="" style="margin-right: 10px;" class="footericon">
+                        <h5 class="footersoc">sampleemail@gmail.com</h5>
+                    </a>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="copyr">
+            <p>
+                Copyrights @ 2024. All rights reserved.
+            </p>
+        </div>
+<!--footer end-->
+
+    </div>
+    
+</body>
+</html>
